@@ -1,0 +1,30 @@
+# ---- secrets (NEVER commit) -------------------------------------------------
+.aqs.env
+*.env
+!.aqs.env.example
+
+# ---- datasets (3.5 GB; all fetched by the loaders, see data/README.md) ------
+data/*
+!data/README.md
+
+# ---- local backups / scratch ------------------------------------------------
+archive/
+*.bak
+
+# ---- paper source (kept local, not part of the code release) ----------------
+paper/
+decisions/
+figures/out/
+
+# ---- run outputs (not part of the release; shared on request) ---------------
+results/
+NEW_RESULTS.md
+
+# ---- python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- OS ---------------------------------------------------------------------
+.DS_Store
